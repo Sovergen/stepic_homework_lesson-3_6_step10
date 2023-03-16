@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default="en-gb",
+    parser.addoption('--language', action='store', default=None,
                      help='choose one of language: "ar",\n "ca",\n "cs",\n  "da",\n  "de",\n  "en-gb",\n  "el",\n  "es",\n  "fi",\n  "fr",\n  "it",\n  "ko",\n  "nl",\n  "pl",\n  "pt",\n  "pt-br",\n  "ro",\n  "ru",\n  sk",\n  "uk",\n  "zh-hans"')
 
 
